@@ -20,25 +20,32 @@ int menu()
 int soma()
 {
     int num1,num2,total;
-    printf("informe o primeiro numero:");
+    printf("\n*************************");
+    printf("\ninforme o primeiro numero:");
     scanf("%d", &num1);
-    printf("informe o segundo numero:");
+    printf("\n*************************");
+    printf("\ninforme o segundo numero:");
     scanf("%d", &num2);
     total=num1+num2;
-    printf("A soma de %d e %d = %d", num1, num2, total);
+    printf("\n*************************");
+    printf("\nA soma de %d e %d = %d", num1, num2, total);
+    printf("\n*************************");
     
 
 }
 int sub()
 {
     int n1,n2,tot;
-    printf("informe o primeiro numero:");
+    printf("\n*************************");
+    printf("\ninforme o primeiro numero:");
     scanf("%d", &n1);
-    printf("informe o segundo numero:");
+    printf("\n*************************");
+    printf("\ninforme o segundo numero:");
     scanf("%d", &n2);
     tot=n1-n2;
-    printf("A subtração de %d e %d = %d", n1, n2, tot);
-    
+    printf("\n*************************");
+    printf("\nA subtração de %d e %d = %d", n1, n2, tot);
+    printf("\n*************************");
 }
 int sair()
 {
