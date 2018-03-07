@@ -23,6 +23,26 @@ strlen(vetor)
 */
 #include <stdio.h>
 #include <string.h>
+int main ()
 {
+    char nome1[15], nome2[15];
+    int tam1, tam2;
+    printf("Informe 1 nome:\n");
+    scanf("%s",nome1);   //SE INFORMAR DO PORQUE NAO TEM O & COMERCIAL
+    tam1=strlen(nome1);
+    printf("informe o 2 nome:\n");
+    scanf("%s",nome2);
+    tam2=strlen(nome2);
+    if (strcmp( nome1,nome2)==0) // ENTENDER O PORQUE DO ==0 SABENDO QUE TEM 3 FUNCOES MAIOR IGUAL MENOR
+    printf("São Iguais");
+    else
+    printf("São Diferentes\n");
+    
+    printf("O tamanho da primeira palavra é: %d\n", tam1);
+    printf("O tamanho da segunda palavra é: %d\n", tam2);
+    
+    strcat(nome1,nome2);//PERGUNTAR DA VARIAVEL DO PRINTF CONCATENADA DANDO ERRO
+    printf("A palavra concatenada é:%s", nome1);
+    return 0;
     
 }
