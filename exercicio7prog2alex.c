@@ -21,8 +21,8 @@ strlen(vetor)
 5.3-Imprima o tamanho de cada string
 5.4-Gere uma 3a. variável pela concatenação das 2 strings nome1 e nome2
 */
-//strcmp usado para comparar strings, não ignora maiuscula e minuscula (==1) (==0)
-//strcasecmp usado para comparar strings, ignora maiuscula e minuscula (==1) (==0)
+//strcmp usado para comparar strings, não ignora maiuscula e minuscula (==1) (==0) (==-1)
+//strcasecmp usado para comparar strings, ignora maiuscula e minuscula (==1) (==0)(==-1)
 //strcpy (onde sera copiado, oque sera copiado)
 //strlen le o tamanho do vetor
 //strcat junta o 1 vetor com o segundo concatena
