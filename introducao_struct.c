@@ -6,23 +6,35 @@ struct reg_hora
   int seg;
     
 };
+
+void imprimeHora(struct reg_hora p)
+{
+    printf("\n%d:%d:%d",p.hora,p.min,p.seg);
+}
+
+void lerHora(struct reg_hora *p)
+{
+       printf("\nEntre com hora:");
+    scanf("%d", &p->hora); //OPCAO DE POR COM A SETA.
+        printf("\nEntre com minuto:");
+    scanf("%d", &(*p).min);//OU POR O * ASTERISTICO.
+        printf("\nEntre com segundo:");
+    scanf("%d", &(*p).seg);
+}
+void adicionarMin(struct reg_hora *p, int min)
+{
+        p->min += min;
+}
 int main()
 {
     struct reg_hora hora;
     int novo_min;
-         printf("\nEntre com hora:");
-    scanf("%d", &hora.hora);
-        printf("\nEntre com minuto:");
-    scanf("%d", &hora.min);
-        printf("\nEntre com segundo:");
-    scanf("%d", &hora.seg);
+      lerHora(&hora);
     
     printf("\nEntre com minutos a adicionar:");
     scanf("%d", &novo_min);
-    
-    hora.min += novo_min;
-    
-    printf("\nNova Hora:%d:%d:%d",hora.hora,hora.min,hora.seg);
+    adicionarMin(&hora, novo_min);
+    imprimeHora(hora);
     return 0;
     
 }
