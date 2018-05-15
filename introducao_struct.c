@@ -23,7 +23,11 @@ void lerHora(struct reg_hora *p)
 }
 void adicionarMin(struct reg_hora *p, int min)
 {
-        p->min += min;
+    int hh = min/60;
+    int mm= min-(hh*60);
+    
+    p->hora += hh;
+    p->min += mm;
 }
 int main()
 {
